@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: db_skinx
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: skinx
+      MYSQL_USER: skinx
+      MYSQL_PASSWORD: skinx
+      MYSQL_ROOT_HOST: '%'
+    ports:
+      - '3308:3306'        
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin_skinx
+    environment:
+      PMA_HOST: db_skinx     
+      PMA_PORT: 3306         
+      PMA_USER: root        
+      PMA_PASSWORD: root     
+    ports:
+      - '8080:80'
+    depends_on:
+      - db
