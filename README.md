@@ -38,8 +38,15 @@ $ npm install
 $ docker-compose up
 ```
 
+## Compile and run the project
+
+เพิ่ม new terminalใหม่เพื่อcopy ข้อมูลจาก .env.dev มาสู่ .env ในเครื่องเราก่อน และทำการ run project
+```bash
+$ npm run start:dev
+```
+
 ## Migrate models on database
-setup database structure ลงบน database
+setup database structure ลงบน database (ปิดการ run project ก่อนหน้านี้ก่อนรัน)
 ```bash
 $ npx prisma migrate dev
 ```
@@ -49,11 +56,4 @@ $ npx prisma migrate dev
 หลังรัน project สำเร็จ ให้ทำการ seed ข้อมูลจาก json ลง database
 ```bash
 $ npx prisma db seed
-```
-
-## Compile and run the project
-
-เพิ่ม new terminalใหม่เพื่อรัน project จาก env.dev มา
-```bash
-$ npm run start:dev
 ```
