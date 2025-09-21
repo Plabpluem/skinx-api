@@ -33,21 +33,21 @@ $ npm install
 
 ## Run database by docker
 
+ติดตั้ง docker และ เปิด docker ในเครื่องของตัวเอง และ run
 ```bash
-# ติดตั้ง docker และ เปิด docker ในเครื่องของตัวเอง และ run
 $ docker-compose up
 ```
 
 ## Compile and run the project
 
+เพิ่ม new terminalใหม่เพื่อรัน project จาก env.dev มา
 ```bash
-# เพิ่ม new terminalใหม่เพื่อรัน project จาก env.dev มา
 $ npm run start:dev
 ```
 
 ## Seed ข้อมูลจาก json
 
+หลังรัน project สำเร็จ ให้ทำการ seed ข้อมูลจาก json ลง database
 ```bash
-# หลังรัน project สำเร็จ ให้ทำการ seed ข้อมูลจาก json ลง database
 $ npx prisma db seed
 ```
