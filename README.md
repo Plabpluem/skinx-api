@@ -53,7 +53,7 @@ $ npx prisma migrate dev
 
 ## Seed ข้อมูลจาก json
 
-หลังรัน project สำเร็จ ให้ทำการ seed ข้อมูลจาก json ลง database
+ให้ทำการ seed ข้อมูลจาก json ลง database และ run project อีกรอบเป็นขั้นตอนสุดท้าย
 ```bash
 $ npx prisma db seed
 ```
