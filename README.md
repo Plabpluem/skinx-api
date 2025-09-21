@@ -45,6 +45,12 @@ $ docker-compose up
 $ npm run start:dev
 ```
 
+## Migrate models on database
+setup database structure ลงบน database
+```bash
+$ npx prisma migrate dev
+```
+
 ## Seed ข้อมูลจาก json
 
 หลังรัน project สำเร็จ ให้ทำการ seed ข้อมูลจาก json ลง database
